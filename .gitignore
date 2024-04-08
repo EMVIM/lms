@@ -1,0 +1,19 @@
+node_modules
+src/config/keys.ts
+
+# config docker
+docker-compose.yaml
+.dockerignore
+
+# config
+.env
+.vscode
+
+# bundle
+dist
+
+# db
+mongo
+
+# document
+content

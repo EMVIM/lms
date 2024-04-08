@@ -1,0 +1,39 @@
+{
+   "name": "codepro",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "start:app": "yarn watch-ts && yarn watch-js",
+      "start": "nodemon --experimental-modules ./dist/index.js",
+      "production": "tsc && yarn start",
+      "build": "tsc --watch",
+      "dev": "concurrently \"npm run build\" \"npm run start\""
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "@types/cors": "^2.8.17",
+      "@types/jsonwebtoken": "^9.0.6",
+      "@vimeo/vimeo": "^3.0.2",
+      "bcryptjs": "^2.4.3",
+      "body-parser": "^1.20.2",
+      "connect-multiparty": "^2.2.0",
+      "cors": "^2.8.5",
+      "dotenv": "^16.4.5",
+      "express": "^4.19.2",
+      "express-promise-router": "^4.1.1",
+      "jsonwebtoken": "^9.0.2",
+      "mongoose": "^8.2.4",
+      "typescript": "^5.4.3"
+   },
+   "devDependencies": {
+      "@types/bcryptjs": "^2.4.6",
+      "@types/express": "^4.17.21",
+      "@types/mime": "^4.0.0",
+      "@types/mongoose": "^5.11.97",
+      "concurrently": "^8.2.2",
+      "ts-node": "^10.9.2"
+   }
+}
